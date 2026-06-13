@@ -37,7 +37,7 @@ export default function Home() {
     if (data.error) {
       setResult("Error: " + data.error);
     } else {
-      setResult(data.result); // base64 image
+      setResult(`data:image/png;base64,${data.result}`);
     }
   };
 
